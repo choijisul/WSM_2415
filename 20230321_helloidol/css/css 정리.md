@@ -40,6 +40,6 @@ selector:hover          마우스 올렸을 때의 selector
 3. #id
 4. .class
 5. TAG
-6. *
+6. \*
 - 구채 > 포괄
 - 같은 우선순위일 때, 나중에 쓴 게 적용g
