@@ -1,3 +1,62 @@
 body{
     background-color: antiquewhite;
 }
+
+/*h1, h2는 plum 배경색*/
+h1,
+h2{
+    /* background-color: plum;*/
+}
+
+/*h1 자매 중 첫번째 h2만 plum 배경색(h1적용 안되는거 시험에 냄!!*/
+h1 + h2{
+    /*background-color: plum;*/
+}
+/*h1의 자매인 모든 h2에 plum배경색*/
+h1 ~ h2{
+    /*background-color: plum;s*/
+}
+ul,
+ol{
+    /* color:blue;
+    font-size: 32px;     부모의 속성을 계단형식이라서(c) ul에 적용하면 li에도 적용됨 */
+}
+
+h5 ~ h6,
+ul{
+    color : #333;
+    font-size: 32px;
+}
+
+.korea{
+    color : skyblue;
+}
+.japan{
+    color: crimson;
+}
+.incheon{
+    color: darkblue;
+}
+.leader{
+    color : purple;
+}
+
+li:nth-child(5){
+    text-decoration: underline;
+}
+/*짝수 행 : even*/
+li:nth-child(even){
+    background-color: #eee;
+}
+/*5의 배수 행 : 5n*/
+li:nth-child(5n){
+    background-color: #aaa;
+}
+
+[type="text"]{
+    background-color: aqua;
+}
+
+ul:nth-child(2) > li:nth-child(2){
+    text-decoration: overline;
+}
