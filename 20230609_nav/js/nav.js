@@ -4,7 +4,7 @@
 // 햄버거메뉴 i -> navToggleI
 // nav-list -> navListUl
 // const navToggleDiv = document.getElementById("nav_toggle");
-const navToggleI = nav_toggle.getElementByTagName("i")[0];
+const navToggleI = nav_toggle.getElementsByTagName("i")[0];
 const navListUl = document.getElementsByClassName("nav-list")[0];
 
 // 2. Event Handling
