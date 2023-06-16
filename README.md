@@ -8,6 +8,7 @@ WSM 수업 내용
 - icon
 - media query
 - nav
+---
 ## 실행방법
 1. 링크 접속하고
 2. index.html 실행
