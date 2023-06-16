@@ -114,4 +114,7 @@
     
 
     /*show-menu하면, .nav-toggle 버튼 x로*/
+    .show-menu{
+      height: 156px;
+    }
   }
