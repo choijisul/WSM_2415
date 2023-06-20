@@ -12,22 +12,21 @@
 // console.log(navToggleDiv);
 // console.log(nav_toggle);
 
-const navToggleI = nav_toggle.getElementsByTagName("i")[0];
-const navListUl = document.getElementsByClassName("nav-list")[0];
+const navToggleI = nav_toggle.getElementsByTagName("i")[0];         
+const navListUl = document.getElementsByClassName("nav-list")[0]; 
 
 // 2. Event Handling
 // nav_toggle.onclick = () => alert("안녕");  // 시험 나옴 // 바로 실행되지 않음 // 잘 ok
 // nav_toggle.onclick = alert("안녕");     // 바로 실행됨  // not ok
+
 nav_toggle.onclick = () => {
     // 햄버거 메뉴를 클릭하면, 햄버거메뉴 i <-> <i class="bi bi-x-lg"></i>
     navToggleI.classList.toggle("bi-list");
     navToggleI.classList.toggle("bi-x-lg");
+
     // 햄버거 메뉴를 클릭하면, .nav=list에 .show-menu 보여주기 <-> 안보여주기
     navListUl.classList.toggle("show-menu");
-
 }
-
-
 
 // ------------------------------------
 

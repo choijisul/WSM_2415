@@ -81,7 +81,7 @@
     /*.nav-list navbar 아래로*/
     .nav-list{
       position: absolute;
-      top: 45px;  /*navbar 아래로*/
+      top: 44px;  /*navbar 아래로*/
       right: 0;
       left: 0;  /*양옆 공간 늘리기*/
       flex-direction: column;  /*column 수직인거 시험에 나옴*/
@@ -114,6 +114,6 @@
     /*show-menu하면, .nav-toggle 버튼 x로*/
     .show-menu {
       height: 172px;
-      
     }
+    
   }
