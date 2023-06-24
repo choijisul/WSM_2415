@@ -1,0 +1,24 @@
+/*3 단계의 동작은 min-width를 써서 만드세요
+desktop: seagreem
+tablet: magenta
+mobile: gold*/
+
+/*폰*/
+
+body {
+    background-color: rgb(93, 83, 126);
+}
+
+/*테블릿*/
+@media screen and (min-width: 541px) {
+    body {
+        background-color: rgb(119, 104, 160);
+    }
+}
+
+/*데스크탑*/
+@media screen and (min-width: 721px) {
+    body {
+        background-color: rgb(152, 139, 187);
+    }
+}
