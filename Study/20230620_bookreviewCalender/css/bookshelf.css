@@ -27,7 +27,7 @@
     transform: translateY(-8px);   /*위로 8px 이동*/
 }
 
-.book-item>img {
+.book-item img {
     width: 150px;
     display: block;   /*이미지 밑 여백 제거*/
 }
