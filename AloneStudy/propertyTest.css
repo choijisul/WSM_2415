@@ -1,0 +1,15 @@
+body{
+    /* color: crimson; */
+    /* text-decoration: underline; */
+    text-align: center;
+}
+div{
+    width: 100px;
+    height: 50px;
+    background-color: antiquewhite;
+    border-width : 10px;
+    border-color : red;
+    border-style: solid;
+    padding: 50px;
+    margin: 50px;
+}

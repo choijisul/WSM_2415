@@ -1,21 +1,33 @@
-.bookshelf{
-    margin-top: calc(44px + 100px);  /*+사이에 띄어쓰기 없으면 작동 x*/
+.bookshelf {
+    margin-top: calc(44px + 100px);
+    /*+사이에 띄어쓰기 없으면 작동 x*/
     display: flex;
-    gap: 80px;  /*row-gap: 20px, column-gap: 20px* 와 동일*/
+    gap: 80px;
+    /*row-gap: 20px, column-gap: 20px* 와 동일*/
     flex-wrap: wrap;
     justify-content: center;
+    max-width: calc(150px * 4 + 80px * 3);
+    margin-right: auto;
+    margin-left: auto;
 }
 
-.row-container{
+.row-container {
     display: flex;
     column-gap: 80px;
     align-items: flex-end;
 }
 
-.book-item{
+.book-item {
     box-shadow: 0 16px 32px #ddd;
+    transition: all 0.2s;  /*hover뿐만 아니라 마우스 벗어나도 자연스럽게 내려옴*/
 }
 
-.book-item > img{
+.book-item:hover {
+    box-shadow: 0 32px 64px #e0e0e0;  /*그림자 더 밑으로, 더 흐리게, 더 밝게*/
+    transform: translateY(-8px);   /*위로 8px 이동*/
+}
+
+.book-item>img {
     width: 150px;
+    display: block;   /*이미지 밑 여백 제거*/
 }
