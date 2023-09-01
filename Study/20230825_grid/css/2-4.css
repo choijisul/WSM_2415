@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.item{
+    border: 2px solid black;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;  /*여러줄일 때 가운데 정렬 하자*/
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    /* grid-template-rows: ; */
+}
+
+.weekday{
+    color: white;
+    border: 2px solid black;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.weekday{
+    background-color: rgb(83, 155, 67);
+}
+
+.weekday:nth-child(1){
+    background-color: transparent;
+}
+
+
+/* 
+.item:nth-child(10),
+.item:nth-child(16),
+.item:nth-child(18),
+.item:nth-child(24),
+.item:nth-child(20),
+.item:nth-child(26),
+.item:nth-child(21),
+.item:nth-child(27),
+.item:nth-child(22),
+.item:nth-child(28),
+.item:nth-child(36),
+.item:nth-child(42){
+    background-color: rgb(208, 230, 203);
+
+} */
+
+.item:nth-child(10){
+    background-color: rgb(221, 247, 214);
+    grid-column: 4/5;
+    grid-row: 2/4;
+
+}
+
+.item:nth-child(17){
+    background-color: rgb(221, 247, 214);
+    grid-column: -2 /-1;
+    grid-row: 3/span 2; 
+    /*span 2/5*, 3/5, 5/3 (간격과 수는 바뀌면 안된다.)*/
+}
+
+.item:nth-child(19){  /*합쳐진 칸은 하나로 계산*/
+    background-color: rgb(221, 247, 214);
+    grid-column: 2/3;
+    grid-row: 4/6; 
+}
+
+.item:nth-child(20){  
+    background-color: rgb(221, 247, 214);
+    grid-column: 3/4;
+    grid-row: 4/6; 
+}
+.item:nth-child(21){  
+    background-color: rgb(221, 247, 214);
+    grid-column: 4/5;
+    grid-row: 4/6; 
+}
+.item:nth-child(31){ 
+    background-color: rgb(221, 247, 214);
+    grid-column: 6/7;
+    grid-row: 6/8; 
+}
+.item:nth-child(35){ 
+    /* background-color: rgb(221, 247, 214); */
+    grid-column: 4/5;
+    grid-row: 7/9; 
+}
+.item:nth-child(36){ 
+    /* background-color: rgb(221, 247, 214); */
+    grid-column: 5/6;
+    grid-row: 7/9; 
+}
+
+.item:nth-child(7),
+.item:nth-child(13),
+.item:nth-child(18),
+.item:nth-child(23),
+.item:nth-child(26),
+.item:nth-child(32),
+.item:nth-child(37){
+    background-color: rgb(155, 201, 143);
+}
+
+html,
+body {
+    height: 100%;
+}
