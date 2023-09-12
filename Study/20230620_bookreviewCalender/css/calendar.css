@@ -39,9 +39,18 @@ main {
     align-items: center; */
 }
 
+/* 1일 위치 조정 */
 .date.item:nth-child(1){
-    background-color: aquamarine;
     grid-column-start: 6;
+}
+
+/* 토요일 파란색 */
+.date.item:nth-child(7n+2){
+    color: blue;
+}
+
+.date.item:nth-child(7n+3){
+    color: red;
 }
 
 .review.flex-container{
