@@ -16,7 +16,7 @@ main {
 .weekday.container{
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    background-color: dodgerblue;
+    background-color: rgb(153, 224, 216);
     border-radius: 10px;
     padding: 10px;
     text-align: center;
@@ -39,12 +39,17 @@ main {
     align-items: center; */
 }
 
+.date.item:nth-child(1){
+    background-color: aquamarine;
+    grid-column-start: 6;
+}
+
 .review.flex-container{
     display: flex;
     flex-direction: column;
     row-gap: 20px;
     font-size: 1.25rem;
-    background-color: dodgerblue;
+    background-color: rgb(153, 224, 216);
     border-radius: 10px;
 }
 
@@ -52,7 +57,6 @@ main {
 /* main * {
     border: 2px solid black;
 } */
-
 
   /*tablet*/
   @media  screen and (max-width: 720px) {
